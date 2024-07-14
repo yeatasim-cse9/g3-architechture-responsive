@@ -14,10 +14,18 @@
     display: flex;
 }
 
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+
 .bg-color{
     background-color: rgba(255, 144, 14, 0.10);
-    max-width: 1280px;
-    margin: 0 auto;
 
 }
 
@@ -27,6 +35,10 @@
 
 .dark-02{
     color: rgba(66, 66, 66, 1);
+}
+
+.dark-03{
+    color: rgba(114, 114, 114, 1);
 }
 
 /* shared-style */
@@ -57,5 +69,37 @@
     font-weight: 700;
 }
 
-
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /* nav-bar-styles-ends */
+
+/* banner-style-starts */
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+/* banner-style-ends */
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .nav-link
+    {
+        flex-direction: column;
+    }
+}
