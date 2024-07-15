@@ -282,7 +282,7 @@ margin-bottom: 80px;
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, 
+    .nav-bar, 
     .nav-link,
     .list-of-Feature,
     .Features-you-will-love-container
@@ -329,7 +329,7 @@ margin-bottom: 80px;
         justify-content: center;
     }
 
-    .Features-you-will-love-content{
+    .Features-you-will-love-content,.some-facts-container{
         width: 100%;
     }
   
@@ -347,7 +347,7 @@ margin-bottom: 80px;
         width: auto;
     }
 
-    .Features-you-will-love-container{
+    .Features-you-will-love-image{
         width: 90%;
         gap: 64px;
     }
