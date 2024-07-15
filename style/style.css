@@ -114,6 +114,7 @@ main{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
+    margin-bottom: 90px;
 }
 
 .architects-feature-container{
@@ -144,30 +145,127 @@ main{
 
 }
 
-
 /* Quick-list-of-Our-Features-ends */
+
+/* Features-you-will-love-&-enjoy-starts */
+
+.Features-you-will-love-container{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.Features-you-will-love-content{
+    width: 50%;
+    width: 475px;
+    height: 872px;
+}
+
+.heading{
+    font-size: 2.8125rem;
+    font-weight: 700;
+    border-left: 0.12em solid rgb(255, 144, 14);
+    padding-left: 8px;
+}
+
+.Features-you-will-love-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.feature-card{
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 15px auto;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-card-title{
+font-size: 1.25rem;
+font-weight: 600;
+}
+
+.feature-card-subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Features-you-will-love-image{
+    width: 50%;
+}
+.Features-you-will-love-image img{
+    width: 100%;
+    max-width: 475px;
+    max-width: 659px;
+}
+.biggest-btn{
+    width: 300px;
+    height: 160px;
+    background-color: rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    padding: 40px;
+    border: none;
+    position: relative;
+    margin-left: -70px;
+    margin-top: -120px;
+}
+#Year{
+    color: #FFF;
+    text-align: center;
+    font-size: 4.0625rem;
+    font-weight: 700;
+}
+#Experience{
+    color: #FFF;
+    font-size: 1.5625rem;
+    font-weight: 500;
+}
+
+
+
+/* Features-you-will-love-&-enjoy-ends */
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .navbar, 
     .nav-link,
-    .list-of-Feature
+    .list-of-Feature,
+    .Features-you-will-love-container
     {
         flex-direction: column;
     }
     .architects-image-container{
         grid-template-columns: repeat(1,1fr);
     }
-
+    .biggest-btn{
+        width: auto;
+    }
+    .Features-you-will-love-image{
+        width: 100%;
+        margin: 30px 0px;
+    }
 }
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .list-of-Feature
+    .list-of-Feature,
+    .Features-you-will-love-container
     {
         flex-direction: column;
     }    
     .architects-image-container{
         grid-template-columns: repeat(2,1fr);
     }
+    .biggest-btn{
+        width: auto;
+    }
+
+    .Features-you-will-love-image{
+        width: 90%;
+        gap: 64px;
+    }
+
 }
