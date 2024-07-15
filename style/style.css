@@ -334,7 +334,7 @@ text-align: center;
 
     .Features-you-will-love-content{
         width: 100%;
-        margin-bottom: 100px;
+        overflow: scroll;
     }
     .architects-image-container,
     .some-facts-image,
